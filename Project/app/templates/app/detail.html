@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ course.title }}</title>
+</head>
+<body>
+    <h1>{{ course.title }}</h1>
+    <p>{{ course.description }}</p>
+    <p>Rating: {{ course.rate }}</p>
+    <a href="{% url 'rate' course.id %}">Rate</a>
+</body>
+</html>

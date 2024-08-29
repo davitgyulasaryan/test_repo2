@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Rate</title>
+</head>
+<body>
+    <h1>Rate {{ course.title }}</h1>
+    <form method="post">
+        {% csrf_token %}
+        <label for="rating">Rating:</label>
+        <input type="number" name="rating" >
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
